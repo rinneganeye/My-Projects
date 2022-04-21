@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+    <title>Input Validation</title>
+</head>
+<body>
+    <div class="form-container">
+        <form action="/" id="form" class="form" onsubmit="return validateForm()">
+            <div class="inputwrap">
+                <input type="text" class="finput" name="name" id="name" placeholder="Name" autocomplete="off">
+                <span id="usererror"></span>
+            </div>
+            <div class="inputwrap">
+                <input type="phone" class="finput" name="phone" id="phone" placeholder="Phone" autocomplete="off">
+                <span id="phoneerror" ></span>
+            </div>
+            <div class="inputwrap">
+                <input type="email" class="finput" name="email" id="email" placeholder="Email" autocomplete="off">
+                <span id="emailerror" ></span>         
+            </div>
+            <div class="inputwrap">
+                <input type="password" class="finput" name="password" id="password" placeholder="Password" autocomplete="off">
+                <span id="passworderror" ></span>         
+            </div>
+            <div class="inputwrap">
+                <input type="password" class="finput" name="conpassword" id="conpassword" placeholder="Confirm Password" autocomplete="off">
+                <span id="conpassworderror" ></span>
+            </div>
+            <input type="submit" id="submit" value="Submit" >
+        </form>
+    </div>
+</body>
+</html>
