@@ -1,5 +1,5 @@
 let card = document.getElementById("container");
-let apiKey = "80ea482a256d4dce918d1a042dd288b8";
+let apiKey = "YOUR API KEY";
 let source = "the-times-of-india";
 let url = `https://newsapi.org/v2/everything?sources=${source}&sortBy=top-headlines&apiKey=${apiKey}`;
 let xhr = new XMLHttpRequest();
